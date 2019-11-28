@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  background: tomato;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 340px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .12), 0 12px 13px rgba(0, 0, 0, .24);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.login input {
+  padding: 5px 8px;
+  border: 1px solid #aaa;
+}
+
+.login input:nth-child(2) {
+  margin-top: 16px;
+}
+
+.login input:nth-child(3) {
+  margin: 16px 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  flex: 1;
+  height: 100vh;
+  background: #eee;
+  padding: 0 10px;
+}
+
+.menu ul li {
+  list-style: none;
+  display: block;
+  padding: 20px;
+  font-size: 14px;
+  transition: .1s ease-out;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  margin-left: 10px;
+}
+
+.menu ul {
+  margin-top: 80px;
+}
+
+.main {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  background: #fcfcfc;
+}
+
+.top {
+  /* flex: 1; */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .12);
+  padding: 10px;
+}
+
+.content {
+  flex: 1;
+  border: 1px solid;
+}
+
+.right {
+  float: right;
+}
