@@ -170,6 +170,7 @@ table tr td {
 
 .product_img {
   width: 80px;
+  cursor: pointer;
 }
 
 .users {

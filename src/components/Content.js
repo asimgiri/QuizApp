@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import QuestionsContainer from '../containers/QuestionsContainer';
 import CategoriesContainer from '../containers/CategoriesContainer';
 import UsersContainer from '../containers/UsersContainer';
+import UserContainerHook from '../containers/UserContainerHooks';
 
 
 export default function Content() {
@@ -15,8 +16,8 @@ export default function Content() {
                 <Route exact path="/categories">
                     <CategoriesContainer />
                 </Route>
-                <Route exact path="/users">
-                    <UsersContainer />
+                <Route exact pat    ="/users">
+                    <UserContainerHook />
                 </Route>
             </Switch>
         </div>
