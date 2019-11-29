@@ -7,7 +7,6 @@ import UsersContainer from '../containers/UsersContainer';
 
 export default function Content() {
     return (
-        <Router>
             <div className="content">
                 <Switch>
                     <Route exact path="/questions">
@@ -21,6 +20,5 @@ export default function Content() {
                     </Route>
                 </Switch>
             </div>
-        </Router>
     )
 }

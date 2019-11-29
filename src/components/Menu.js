@@ -1,23 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import QuestionsContainer from '../containers/QuestionsContainer';
+import CategoriesContainer from '../containers/CategoriesContainer';
+import UsersContainer from '../containers/UsersContainer';
+import Content from './Content';
 
 
 export default function Menu() {
     return (
-        <Router>
-            <div className="menu">
-                <ul>
+        <div className="menu">
+            <ul>
+                <h2>user</h2>
+                <NavLink exact to="/users">
                     <li>
-                        <Link to="/users"><i className="fas fa-angle-right"></i> Users</Link>
-                    </li>
+                        <i className="fas fa-angle-right"></i> Users
+                            </li>
+                </NavLink>
+                <NavLink to="/questions">
                     <li>
-                        <Link to="/questions"><i className="fas fa-angle-right"></i> Questions</Link>
-                    </li>
+                        <i className="fas fa-angle-right"></i> Questions
+                            </li>
+                </NavLink>
+                <NavLink to="/categories">
                     <li>
-                        <Link to="/categories"><i className="fas fa-angle-right"></i> Categories</Link>
-                    </li>
-                </ul>
-            </div>
-        </Router>
+                        <i className="fas fa-angle-right"></i> Categories
+                            </li>
+                </NavLink>
+            </ul>
+        </div>
     )
 }

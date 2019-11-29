@@ -12,8 +12,9 @@ const DashboardWrapper = ({ children }) => {
             <div className="main">
                 <Top />
                 {children}
-            </div>  
+            </div>
         </div>
     )
 }
+
 export default DashboardWrapper;

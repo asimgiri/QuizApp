@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Routes from '../routes/Routes';
 
 export default class Login extends Component {
     render() {
@@ -7,7 +9,7 @@ export default class Login extends Component {
                 <h2>Get Started</h2>
                 <input type="text" placeholder="Username" />
                 <input type="password" placeholder="Password" />
-                <a href=""><button><i class="fas fa-sign-in-alt"></i> Login</button></a>
+                <button><i class="fas fa-sign-in-alt"></i> Login</button>
             </div>
         )
     }
