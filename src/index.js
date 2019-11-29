@@ -2,15 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Routes from './routes/Routes';
-
-
-import { createBrowserHistory } from "history";
-const history = createBrowserHistory();
-
-
 
 ReactDOM.render(
     <Router>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Login from '../components/Login';
-import { Router, Switch, Route, withRouter } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import UsersContainer from '../containers/UsersContainer';
 import DashboardRoutes from './DashboardRoutes';
 import QuestionsContainer from '../containers/QuestionsContainer';
@@ -8,12 +8,12 @@ import CategoriesContainer from '../containers/CategoriesContainer';
 
 const Routes = () => {
   return (
-        <Switch>
-          <Route exact path="/" component={Login} />
-          <DashboardRoutes exact path="/users" token={true} component={UsersContainer} />
-          <DashboardRoutes exact path="/questions" token={true} component={QuestionsContainer} />
-          <DashboardRoutes exact path="/categories" token={true} component={CategoriesContainer} />
-        </Switch>
+    <Switch>
+      <Route exact path="/" component={Login} />
+      <DashboardRoutes exact path="/users" token={true} component={UsersContainer} />
+      <DashboardRoutes exact path="/questions" token={true} component={QuestionsContainer} />
+      <DashboardRoutes exact path="/categories" token={true} component={CategoriesContainer} />
+    </Switch>
   );
 }
 

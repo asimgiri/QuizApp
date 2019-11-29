@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +7,12 @@
 
 body {
   background: #eee;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #444;
 }
 
 button {
@@ -20,6 +22,11 @@ button {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 4px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.center {
+  text-align: center;
 }
 
 .login {
@@ -60,6 +67,11 @@ button {
   background: #eee;
 }
 
+.menu p {
+  margin: 10px 0;
+  color: #333;
+}
+
 .menu h2 {
   text-align: center;
   margin-bottom: 60px;
@@ -80,7 +92,7 @@ button {
 }
 
 .menu ul li:hover {
-  background: rgb(219, 219, 219);
+  background: rgba(216, 215, 215, 0.2);
 }
 
 .menu ul {
@@ -96,8 +108,8 @@ button {
 
 .top {
   /* flex: 1; */
-  box-shadow: 0 2px 3px rgba(0, 0, 0, .12);
   padding: 8px;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 .content {
@@ -111,4 +123,59 @@ button {
 .active {
   color: tomato;
   position: relative;
+}
+
+.active li {
+  background: rgba(216, 215, 215, 0.4);
+}
+
+.user_profile {
+  margin: auto;
+  background: rgba(255, 91, 77, .1);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.user_profile i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: tomato;
+  font-size: 30px;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+table tr th {
+  background: 0;
+}
+
+table tr:nth-child(even) {
+  background: rgb(245, 244, 244);
+}
+
+table tr td {
+  padding: 10px 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.product_img {
+  width: 80px;
+}
+
+.users {
+  padding-top: 20px;
+}
+
+.tablehead {
+  background: 0 !important;
 }

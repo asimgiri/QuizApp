@@ -1,19 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
-import QuestionsContainer from '../containers/QuestionsContainer';
-import CategoriesContainer from '../containers/CategoriesContainer';
-import UsersContainer from '../containers/UsersContainer';
-import Content from './Content';
-
+import { NavLink } from 'react-router-dom';
 
 export default function Menu() {
     return (
         <div className="menu">
             <ul>
-                <h2>user</h2>
+                <div className="user_profile">
+                    <i className="fas fa-user"></i>
+                </div>
+                <p className="center">Username</p>
                 <NavLink exact to="/users">
                     <li>
-                        <i className="fas fa-angle-right"></i> Users
+                    <i className="fas fa-angle-right"></i> Users
                             </li>
                 </NavLink>
                 <NavLink to="/questions">

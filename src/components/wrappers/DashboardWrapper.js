@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Menu from '../Menu';
 import Top from '../Top';
-import Content from '../Content';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.css';
+import 'axios/dist/axios';
 
 const DashboardWrapper = ({ children }) => {
     return (
